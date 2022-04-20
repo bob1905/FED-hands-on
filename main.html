@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<header id="appHeader">FED Hands On</header>
+<section id="searchArea">
+    <label for="searchInput">Search for Movies</label>
+    <input id="searchInput" type="text">
+    <button id="searchButton" onclick="search()">Click me</button>
+</section>
+<section>
+    <div id="moviesContainer"></div>
+</section>
+
+<div id="moviePopup" >
+    <div class="modal-section">
+        <button id="closePopup" onclick="popUpControl()">X</button>
+    </div>
+    <div id="modalContent" class="modal-section"></div>
+    </div>
+</div>
+</body>
+</html>
+

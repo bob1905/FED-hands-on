@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+#appHeader {
+    background-color: cornsilk;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+#searchArea {
+    padding: 50px;
+}
+#moviesContainer {
+    background-color: azure;
+    align-items: center;
+}
+
+.card-container {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid black; 
+    margin: 0 5px 5px;
+}
+
+.card-image {
+    height: 300px;
+    width: 220px;
+}
+.card-text {
+    text-align: center;
+}
+
+#moviePopup {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-section{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#modalContent {
+    height: 50%;
+    overflow-y: scroll;
+}
+
+#closePopup {
+    color: #aaaaaa;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#closePopup:hover,
+#closePopup:focus {
+    color: #000;
+    cursor: pointer;
+}
